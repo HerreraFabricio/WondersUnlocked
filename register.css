@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/bg.jpg') no-repeat center center/cover;
+}
+
+.form-container {
+    position: relative;
+    background: rgba(100, 18, 18, 0.2); /* Translucido */
+    border-radius: 15px;
+    padding: 20px 30px;
+    width: 350px;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.header {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #043464;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ddd;
+    font-size: 18px;
+    pointer-events: none; /* Para evitar que interfiera con el input */
+}
+
+.input-group input {
+    width: 100%; 
+    padding: 10px 10px 10px 40px; /* Espacio para el icono */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+    color: #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #043464;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #ddd;
+}
+
+.footer-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
